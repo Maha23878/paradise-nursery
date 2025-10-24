@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Cart — Paradise Nursery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="brand">Paradise Nursery</div>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="products.html">Products</a>
+    </nav>
+    <div class="cart-indicator">Cart: <span class="cart-count-display">0</span></div>
+  </header>
+
+  <main class="container">
+    <h2>Shopping Cart</h2>
+
+    <div id="cart-list"></div>
+
+    <div class="cart-summary">
+      <p>Total plants: <strong id="cart-total-items">0</strong></p>
+      <p>Total cost: <strong id="cart-total-price">$0.00</strong></p>
+    </div>
+
+    <div class="cart-actions">
+      <a class="btn" href="products.html">Continue Shopping</a>
+      <button id="checkout-btn" class="btn">Checkout</button>
+    </div>
+  </main>
+
+  <footer class="footer">Paradise Nursery © <span id="year3"></span></footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+  <script src="cart.js"></script>
+</body>
+</html>
