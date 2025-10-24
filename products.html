@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Paradise Nursery — Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="brand">Paradise Nursery</div>
+    <nav><a href="index.html">Home</a> | <a href="cart.html">Cart (<span class="cart-count-display">0</span>)</a></nav>
+  </header>
+
+  <main class="container">
+    <h2>Plants for Sale</h2>
+
+    <section class="category">
+      <h3>Air-Purifying</h3>
+      <div class="grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=300&q=60" alt="Snake Plant">
+          <div class="pname">Snake Plant</div>
+          <div class="price">$18.00</div>
+          <button class="add-to-cart-btn" data-id="p1" data-name="Snake Plant" data-price="18" data-img="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=300&q=60">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1501009780532-6c6b4a7f3c8b?auto=format&fit=crop&w=300&q=60" alt="Spider Plant">
+          <div class="pname">Spider Plant</div>
+          <div class="price">$10.00</div>
+          <button class="add-to-cart-btn" data-id="p6" data-name="Spider Plant" data-price="10" data-img="https://images.unsplash.com/photo-1501009780532-6c6b4a7f3c8b?auto=format&fit=crop&w=300&q=60">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h3>Low-Light</h3>
+      <div class="grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1526547960437-7c6c7a0b1b87?auto=format&fit=crop&w=300&q=60" alt="ZZ Plant">
+          <div class="pname">ZZ Plant</div>
+          <div class="price">$22.00</div>
+          <button class="add-to-cart-btn" data-id="p2" data-name="ZZ Plant" data-price="22" data-img="https://images.unsplash.com/photo-1526547960437-7c6c7a0b1b87?auto=format&fit=crop&w=300&q=60">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1595341888196-d0f2c2b4f1d2?auto=format&fit=crop&w=300&q=60" alt="Pothos">
+          <div class="pname">Pothos</div>
+          <div class="price">$12.00</div>
+          <button class="add-to-cart-btn" data-id="p4" data-name="Pothos" data-price="12" data-img="https://images.unsplash.com/photo-1595341888196-d0f2c2b4f1d2?auto=format&fit=crop&w=300&q=60">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h3>Large Foliage</h3>
+      <div class="grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=300&q=60" alt="Monstera">
+          <div class="pname">Monstera</div>
+          <div class="price">$35.00</div>
+          <button class="add-to-cart-btn" data-id="p3" data-name="Monstera" data-price="35" data-img="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=300&q=60">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1542452255191-c4c2a57f5b3f?auto=format&fit=crop&w=300&q=60" alt="Fiddle Leaf Fig">
+          <div class="pname">Fiddle Leaf Fig</div>
+          <div class="price">$45.00</div>
+          <button class="add-to-cart-btn" data-id="p5" data-name="Fiddle Leaf Fig" data-price="45" data-img="https://images.unsplash.com/photo-1542452255191-c4c2a57f5b3f?auto=format&fit=crop&w=300&q=60">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Paradise Nursery © <span id="year2"></span></footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script src="cart.js"></script>
+</body>
+</html>
